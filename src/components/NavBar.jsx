@@ -1,3 +1,5 @@
+import CartWidget from "./CartWidget"
+
 const NavBar = () => {
   return (
     <div className="flex flex-col gap-y-8 xl:flex xl:flex-row xl:justify-between items-center">
@@ -12,9 +14,7 @@ const NavBar = () => {
           <li><a className="cursor-pointer">Blog Noticias</a></li>
         </ul>
       </nav>
-      <div className="carrito text-2xl font-medium xl:flex xl:flex-row cursor-pointer">
-        <i className="fa-solid fa-cart-shopping xl:flex xl:flex-row"></i>&nbsp;<span className="">Mi Carrito</span>
-      </div>
+      <CartWidget />
     </div>
   )
 }
