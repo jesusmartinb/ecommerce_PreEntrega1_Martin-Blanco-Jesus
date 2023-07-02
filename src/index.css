@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+html {
+	/* Hack para Box Model */
+	box-sizing: border-box;
+	scroll-snap-type: y mandatory;
+}
+
+/* Hack para Box Model */
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Playfair Display', serif;
+}
+
+h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-weight: 200;
+}
